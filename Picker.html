@@ -8,6 +8,62 @@
     <script src="js/app.js"></script>
   </head>
   <body>
+    <!-- set up header -->
+    <div class="header" >
+      <h1>Pick Your Winners!</h1>
+      <h4>Pick the winner of each game, and use the arrow buttons to
+         order the games according to your confidence in your choice.  The
+         top game on the list is worth +- 16 points, so choose wisely!
+      </h4>
+    </div>
+    <div class="content">
+
+      <!-- set up a header bar for game table display -->
+      <div class="headerBar">
+        <h3>Week 1 Games</h3>
+      </div>
+
+      <!-- set up the table of games -->
+      <div>
+        <table class="gameTable">
+          <!-- add games -->
+          <tr class="game">
+            <td class="firstUpArrow upArrow "><img src="images/upArrow.png" width="40px" alt=""></td>
+            <td rowspan="2"><img class="unselected awayTeam" src="images/saints.jpg" width="100px" alt=""></td>
+            <td rowspan="2"><img class="selected homeTeam" src="images/rams.jpg" width="100px" alt=""></td>
+            <td rowspan="2" class="points">16</td>
+          </tr>
+          <tr>
+            <td class="downArrow"><img src="images/downArrow.jpg" width="40px" alt=""></td>
+          </tr>
+          <tr class="game">
+            <td class="upArrow"><img src="images/upArrow.png" width="40px" alt=""></td>
+            <td rowspan="2"><img class="unselected awayTeam" src="images/patriots.jpg" width="100px" alt=""></td>
+            <td rowspan="2"><img class="selected homeTeam" src="images/titans.jpg" width="100px" alt=""></td>
+            <td rowspan="2" class="points">15</td>
+          </tr>
+          <tr>
+            <td class="downArrow"><img src="images/downArrow.jpg" width="40px" alt=""></td>
+          </tr>
+          <tr class="game">
+            <td class="upArrow"><img src="images/upArrow.png" width="40px" alt=""></td>
+            <td rowspan="2"><img class="unselected awayTeam" src="images/bengals.jpg" width="100px" alt=""></td>
+            <td rowspan="2"><img class="selected homeTeam" src="images/cardinals.jpg" width="100px" alt=""></td>
+            <td rowspan="2" class="points">14</td>
+          </tr>
+          <tr>
+            <td class="downArrow lastDownArrow"><img src="images/downArrow.jpg" width="40px" alt=""></td>
+          </tr>
+
+        </table>
+
+      </div>
+
+      <div class="centerButton">
+<!--        <button id="saveButton" type="button" >Save</button>  -->
+      </div>
+
+    </div> <!-- content -->
 
   </body>
 </html>

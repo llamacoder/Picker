@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Champagne & Limousines Bold";
+    src: url('Champagne & Limousines Bold.ttf');
+}
+
+body {
+  font-family: "Champagne & Limousines Bold";
+}
+p {
+  color: #001b42;
+}
+
+.header {
+  /* put the gist in the center */
+  margin: auto;
+  width: 60%;
+  height: 200px;
+  background-image: url("../images/footballField.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
+  margin-top: 0;
+  font-family: "Champagne & Limousines Bold";
+}
+.header h1 {
+  color: white;
+  margin-top: 20px;
+  font-size: 40px;
+}
+.header h4 {
+  width: 500px;
+  color: white;
+  margin:auto;
+  font-size: 25px;
+}
+.header img {
+  width: 100%;
+}
+.content {
+  /* put the gist in the center */
+  margin: auto;
+  width: 60%;
+}
+.headerBar {
+  background-color: black;
+  color: white;
+  text-align: left;
+  height: 30px;
+}
+.headerBar h3 {
+  padding-top: 5px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+.centerButton {
+  padding-top: 30px;
+  margin:auto;
+  width: 200px;
+}
+
+.gameTable {
+  margin: auto;
+  width: 370px;
+  text-align: center;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.game {
+  border: 2px solid black;
+}
+tr {
+  height: 50px;
+  overflow: hidden;
+}
+.game td {
+  padding: 0;
+}
+.selected {
+  border: 4px solid red;
+}
+.unselected {
+  border: none;
+}
+img {
+  display: block;
+}
+.downArrow {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.upArrow {
+  border-right: 2px solid black;
+  border-left: 2px solid black;
+}
+.firstUpArrow {
+  visibility: hidden;
+}
+.lastDownArrow {
+  visibility: hidden;
+}
+.points {
+  border-left: 2px solid black;
+  font-size: 70px;
+  width: 120px;
+}
