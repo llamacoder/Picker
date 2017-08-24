@@ -58,26 +58,31 @@ p {
   width: 200px;
 }
 
-.gameTable {
+.gameListContainer {
   margin: auto;
-  width: 370px;
+  width: 400px;
   text-align: center;
   margin-top: 20px;
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 .game {
-  border: 2px solid black;
+  padding: 0;
+  margin: 0;
 }
 tr {
   height: 50px;
   overflow: hidden;
+  padding: 0;
 }
-.game td {
+table {
+  border-collapse: collapse;
+  border: 2px solid black;
+  width: 100%;
+}
+td {
   padding: 0;
 }
 .selected {
-  border: 4px solid red;
+  border: 4px solid green;
 }
 .unselected {
   border: none;
@@ -88,9 +93,10 @@ img {
 .downArrow {
   border-right: 2px solid black;
   border-left: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid black;
 }
 .upArrow {
+  border-bottom: 2px solid black;
   border-right: 2px solid black;
   border-left: 2px solid black;
 }
