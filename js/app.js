@@ -17,19 +17,27 @@ $(document).ready(function() {
 function pickHomeTeam(game) {
   var home = game.find(".homeTeam");
   var away = game.find(".awayTeam");
+  var unselectedSource = away.data("imgunsel");
+  var selectedSource = home.data("imgsel");
   away.removeClass('selected');
   away.addClass('unselected');
+  away.find("img").attr("src", unselectedSource);
   home.removeClass('unselected');
   home.addClass('selected');
+  home.find("img").attr("src", selectedSource);
 }
 
 function pickAwayTeam(game) {
   var home = game.find(".homeTeam");
   var away = game.find(".awayTeam");
+  var unselectedSource = home.data("imgunsel");
+  var selectedSource = away.data("imgsel");
   home.removeClass('selected');
   home.addClass('unselected');
+  home.find("img").attr("src", unselectedSource);
   away.removeClass('unselected');
   away.addClass('selected');
+  away.find("img").attr("src", selectedSource);
 }
 
 function moveRowUp(game) {
